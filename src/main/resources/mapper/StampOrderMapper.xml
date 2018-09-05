@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cyyz.cy_system.infrastructure.dao.StampOrderMapper">
+  <resultMap id="BaseResultMap" type="com.cyyz.cy_system.domain.model.StampOrder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="Guid_ID" jdbcType="CHAR" property="guidId" />
+    <result column="Code" jdbcType="NVARCHAR" property="code" />
+    <result column="OrderType" jdbcType="NVARCHAR" property="ordertype" />
+    <result column="StampUnit" jdbcType="NVARCHAR" property="stampunit" />
+    <result column="cCusCode" jdbcType="NVARCHAR" property="ccuscode" />
+    <result column="cLinkCode" jdbcType="NVARCHAR" property="clinkcode" />
+    <result column="dDate" jdbcType="TIMESTAMP" property="ddate" />
+    <result column="dPreDeliDate" jdbcType="TIMESTAMP" property="dpredelidate" />
+    <result column="iTotalCost" jdbcType="DOUBLE" property="itotalcost" />
+    <result column="IsInvoice" jdbcType="BIT" property="isinvoice" />
+    <result column="InvoiceID" jdbcType="INTEGER" property="invoiceid" />
+    <result column="Status" jdbcType="NVARCHAR" property="status" />
+    <result column="PrintCode" jdbcType="NVARCHAR" property="printcode" />
+    <result column="IsDeli" jdbcType="BIT" property="isdeli" />
+    <result column="DeliDept" jdbcType="NVARCHAR" property="delidept" />
+    <result column="LicenseNo" jdbcType="NVARCHAR" property="licenseno" />
+    <result column="DeliAddress" jdbcType="NVARCHAR" property="deliaddress" />
+    <result column="SourceCode" jdbcType="NVARCHAR" property="sourcecode" />
+    <result column="iPrintCount" jdbcType="INTEGER" property="iprintcount" />
+    <result column="Remark" jdbcType="NVARCHAR" property="remark" />
+    <result column="CreatedBy" jdbcType="NVARCHAR" property="createdby" />
+    <result column="cDepCode" jdbcType="NVARCHAR" property="cdepcode" />
+    <result column="cTeamCode" jdbcType="NVARCHAR" property="cteamcode" />
+    <result column="CreateDate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="ModifiedBy" jdbcType="NVARCHAR" property="modifiedby" />
+    <result column="ModifyDate" jdbcType="TIMESTAMP" property="modifydate" />
+    <result column="isElectronic" jdbcType="BIT" property="iselectronic" />
+    <result column="VerificationCode" jdbcType="NVARCHAR" property="verificationcode" />
+    <result column="CertificateCode" jdbcType="NVARCHAR" property="certificatecode" />
+    <result column="ErrorReason" jdbcType="NVARCHAR" property="errorreason" />
+    <result column="ChargeAmount" jdbcType="DOUBLE" property="chargeamount" />
+    <result column="ZDWHZ" jdbcType="NVARCHAR" property="zdwhz" />
+    <result column="LastAccessTime" jdbcType="BINARY" property="lastaccesstime" />
+  </resultMap>
+<select id="selectAdv" resultMap="BaseResultMap">
+select * from sa_StampOrder WHERE stampunit LIKE '%博凯%'
+</select>
+</mapper>

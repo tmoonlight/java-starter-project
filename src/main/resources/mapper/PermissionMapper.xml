@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cyyz.cy_system.infrastructure.dao.PermissionMapper">
+  <resultMap id="BaseResultMap" type="com.cyyz.cy_system.domain.model.Permission">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="orders" jdbcType="INTEGER" property="orders" />
+    <result column="image_url" jdbcType="VARCHAR" property="imageUrl" />
+    <result column="permission_url" jdbcType="VARCHAR" property="permissionUrl" />
+    <result column="available" jdbcType="BIT" property="available" />
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+  </resultMap>
+</mapper>

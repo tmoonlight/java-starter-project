@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cyyz.cy_system.infrastructure.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.cyyz.cy_system.domain.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="staff_no" jdbcType="VARCHAR" property="staffNo" />
+    <result column="staff_name" jdbcType="VARCHAR" property="staffName" />
+    <result column="proxy_user" jdbcType="VARCHAR" property="proxyUser" />
+    <result column="dept_no" jdbcType="VARCHAR" property="deptNo" />
+    <result column="loaded" jdbcType="BIT" property="loaded" />
+    <result column="disabled" jdbcType="BIT" property="disabled" />
+    <result column="locked" jdbcType="BIT" property="locked" />
+    <result column="remark" jdbcType="LONGVARCHAR" property="remark" />
+  </resultMap>
+</mapper>

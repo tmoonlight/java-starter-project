@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cyyz.cy_system.infrastructure.dao.DataMapper">
+  <resultMap id="BaseResultMap" type="com.cyyz.cy_system.domain.model.Data">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="table_name" jdbcType="VARCHAR" property="tableName" />
+    <result column="field" jdbcType="VARCHAR" property="field" />
+    <result column="available" jdbcType="BIT" property="available" />
+    <result column="remark" jdbcType="LONGVARCHAR" property="remark" />
+  </resultMap>
+</mapper>
